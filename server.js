@@ -13,9 +13,9 @@ app.use(
     express.json({ extended: false })
 );
 
-app.get('/', (req, res) => {
-    res.send('Backend Server Running');
-})
+// app.get('/', (req, res) => {
+//     res.send('Backend Server Running');
+// })
 
 app.use('/api/login', require('./routes/api/login'));
 app.use('/api/register', require('./routes/api/register'));
